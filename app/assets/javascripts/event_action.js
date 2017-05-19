@@ -117,7 +117,7 @@ $(document).click(function() {
     hiddenDialog('dialog-delete-popup');
   }
 
-  if($(event.target).closest('.fc-event').length === 0 && $(event.target).closest('#google-event-popup').length === 0) {
+  if ($(event.target).closest('.fc-event').length === 0 && $(event.target).closest('#google-event-popup').length === 0) {
     hiddenDialog('google-event-popup');
   }
 });

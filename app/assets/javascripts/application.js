@@ -131,6 +131,22 @@ $(document).on('ready', function() {
     }
     localStorage.setItem('isHideSidebarFlag', flag);
   }
+  $('body').on('click', function(e){
+    $("#new-event-dialog").click(function(e) {
+      e.stopPropagation();
+    });
+    $("#popup").click(function(e) {
+      e.stopPropagation();
+    });
+    $('#dialog-update-popup').click(function(e) {
+      e.stopPropagation();
+    });
+    hiddenDialog('new-event-dialog');
+    hiddenDialog('popup');
+    hiddenDialog('dialog-update-popup');
+  });
+
+
 });
 
 function add_fields(link, association, content) {

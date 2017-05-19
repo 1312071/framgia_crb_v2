@@ -207,15 +207,8 @@ $(document).on('ready', function() {
   });
 
   $(document).keyup(function(e) {
-    if (e.keyCode != 27)
-      e.preventDefault();
-    else if ($('.cb-repeat').hasClass('first')) {
-      disable_repeat_params();
-      uncheckRepeat();
-      clearDialog();
-    }
+    e.preventDefault();
   });
-
   // function checkedWeekly() {
   //   var repeatOn = $('#start-date-repeat').val().split('-');
   //   var splitRepeatOn = new Date(repeatOn[2], repeatOn[1] - 1, repeatOn[0]);

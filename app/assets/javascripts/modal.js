@@ -20,3 +20,8 @@ $(document).on('ready', function() {
     modal2.fadeOut(300);
   });
 });
+
+var hiddenModal = function(modalId) {
+  var dialog = $('#' + modalId);
+  dialog.css('display', 'none');
+};

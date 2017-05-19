@@ -2,7 +2,8 @@
   <label class="div-box">
     <div data-color-id="<%= calendar.uc_color_id %>" data-calendar-id="<%= calendar.id %>"
       class="f-inline-block ccp-rb-color color-<%= calendar.uc_color_id %> <%= "uncheck" unless calendar.is_checked? %>"
-      tabindex="0" role="button" google_calendar_id="<%= calendar.google_calendar_id %>"></div>
+      tabindex="0" role="button" google_calendar_id="<%= calendar.google_calendar_id %>">
+    </div>
     <%= calendar.name %>
   </label>
   <% if user_signed_in? && calendar.permission_id == 1 %>

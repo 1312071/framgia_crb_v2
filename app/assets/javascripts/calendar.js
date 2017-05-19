@@ -178,12 +178,12 @@ $(document).on('ready', function() {
         revertFunc();
         alert(I18n.t('events.flashs.not_updated'));
       }
+
       hiddenDialog('new-event-dialog');
       hiddenDialog('popup');
     },
     eventDragStart: function(event) {
       localStorage.setItem('current_event_id', event.id);
-
       hiddenDialog('new-event-dialog');
       hiddenDialog('popup');
     },
